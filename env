@@ -1,0 +1,6 @@
+PORT = 4500
+NODE = development
+node_modules
+Username = Androidm16
+Password = vPQlGeHQTnVm2Lfg
+MONGO_URL= mongodb+srv://Androidm16:vPQlGeHQTnVm2Lfg@cluster0.2qrwe.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
