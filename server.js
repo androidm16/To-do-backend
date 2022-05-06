@@ -6,7 +6,7 @@ const path = require('path');
 const todoRoute = require('./routes/todo');
 
 const connectDB = require('./config/db');
-dotenv.config({ path: './env' })
+dotenv.config({ path: './.env' })
 connectDB()
 
 const app = express();
