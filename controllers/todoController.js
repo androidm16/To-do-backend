@@ -9,13 +9,14 @@ const Todo = require('../models/todoModel');
  * @access Public
  */
 exports.createTodo = asyncHandler(async (req, res) => {
-    const {title, active} = req.body
-    const todo = await Todo.create({title, active});
-    res.status(201).json({
-        success: true,
-        data: todo,
-        message: 'Task is created successfully'
-    })
+    console.log(req.body)
+    // const {title, active} = req.body
+    // const todo = await Todo.create({title, active});
+    // res.status(201).json({
+    //     success: true,
+    //     data: todo,
+    //     message: 'Task is created successfully'
+    // })
 })
 
 /**
@@ -77,7 +78,7 @@ exports.createTodo = asyncHandler(async (req, res) => {
         res.status(200).json({
             success: true,
             data: allTasks,
-            message: "All Tasks fetched succeefully"
+            // message: "All Tasks fetched succeefully"
         })
     } else {
         res.status(401).json({
