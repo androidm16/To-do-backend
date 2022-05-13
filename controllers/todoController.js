@@ -34,7 +34,7 @@ exports.createTodo = asyncHandler(async (req, res) => {
         res.status(200).json({
             success: true,
             data: updatedTask,
-            message: 'Task is updated successfully'
+            // message: 'Task is updated successfully'
         })
     } else {
         res.status(401).json({
@@ -56,7 +56,7 @@ exports.createTodo = asyncHandler(async (req, res) => {
         await existTask.remove();
         res.status(200).json({
             success: true,
-            message: 'Task is deleted successfully'
+            // message: 'Task is deleted successfully'
         })
     } else {
         res.status(401).json({
@@ -79,15 +79,15 @@ exports.createTodo = asyncHandler(async (req, res) => {
             success: true,
             data: allTasks,
             // message: "All Tasks fetched succeefully"
-        })
+        });
     } else {
         res.status(401).json({
             success: false,
             data: null,
             message: 'Tasks Not Found'
-        })
+        });
     }
-})
+});
 
 /**
  * @desc For Getting a single Task
@@ -100,7 +100,7 @@ exports.createTodo = asyncHandler(async (req, res) => {
         res.status(200).json({
             success: true,
             data: existTask,
-            message: 'Task fetched successfully'
+            // message: 'Task fetched successfully'
         })
     } else {
         res.status(401).json({
